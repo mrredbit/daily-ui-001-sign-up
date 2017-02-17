@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.animated {
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+
+@-webkit-keyframes unfold {
+    from {
+        transform: perspective(800px) rotateY(-90deg);
+        -webkit-transform: perspective(800px) rotateY(-90deg);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: right;
+    }
+    to {
+        transform: perspective(800px) rotateY(0deg);
+        -webkit-transform: perspective(800px) rotateY(0deg);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: right;
+    }
+}
+
+@keyframes unfold {
+    from {
+        transform: perspective(800px) rotateY(-90deg);
+        -webkit-transform: perspective(800px) rotateY(-90deg);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: right;
+    }
+    to {
+        transform: perspective(800px) rotateY(0deg);
+        -webkit-transform: perspective(800px) rotateY(0deg);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: right;
+    }
+}
+
+.unfold {
+    -webkit-animation-name: unfold;
+    animation-name: unfold;
+}
+

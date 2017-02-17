@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: AvenirNext-DemiBold;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    color: #63656a;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #ff8a8a;
+    color: rgba(255, 0, 0, 0.20);
+    box-shadow: 0 0 5px 3px rgba(255, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 1.8px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#sign-up {
+    background: url("../asset/background.png") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#sign-up .main {
+    position: absolute;
+    top: 317px;
+    width: 620px;
+    height: 300px;
+
+    /* center horizontal */
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#sign-up .main label {
+    font-family: AvenirNext-Medium;
+    font-size: 40px;
+    letter-spacing: 8.3px;
+    color: #565154;
+    text-transform: uppercase;
+}
+
+#sign-up .main button.join {;
+    width: 276px;
+    height: 56px;
+    margin: 24px 0 0 0;
+}
+
+#sign-up .modal {
+    position: absolute;
+    top: 168px;
+    width: 696px;
+    height: 424px;
+
+    /* center horizontal */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#sign-up .modal .left-col {
+    float: left;
+    position: absolute;
+    z-index: -1;
+    transform: perspective(800px) rotateY(-90deg);
+    transform-origin: right;
+
+    width: 252px;
+    height: 100%;
+    background-color: #ff8a8a;
+}
+
+#sign-up .modal .right-col {
+    width: 444px;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+}
+
+#sign-up .modal .right-col .login {
+    position: relative;
+    top: 90px;
+    width: 276px;
+
+    /* center horizontal */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#sign-up .modal .right-col .login .input-holder {
+    border-bottom: solid 1px #c8c9cb;
+    margin: 0 0 34px 0;
+    padding: 0 0 8px 0;
+}
+
+#sign-up .modal .right-col .login .input-holder label {
+    float: left;
+    clear: left;
+    width: 90px;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+#sign-up .modal .right-col .login .input-holder span {
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+}
+
+#sign-up .modal .right-col .login .input-holder span input {
+    border: none;
+    outline: none;
+    text-align: right;
+    width: 100%;
+    font-family: Avenir Next;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #4c4c4c;
+    box-sizing: border-box;
+}
+
+#sign-up .modal .right-col .login button {
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 48px;
+    margin: 32px 0 0 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    #sign-up {
+        background-image: url("../asset/background@2x.png");
+    }
+}
